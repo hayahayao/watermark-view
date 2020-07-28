@@ -20,7 +20,8 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*/zxkp-admin*"
+                "*://*/zxkp-admin*",
+                "http://localhost/*"
             ],
             "js": [
                 "watermark.js"
