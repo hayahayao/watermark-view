@@ -1,0 +1,30 @@
+{
+    "name": "Watermark View",
+    "version": "1.0",
+    "description": "View watermark-dom in browser",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ],
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/zxkp-admin*"
+            ],
+            "js": [
+                "watermark.js"
+            ]
+        }
+    ]
+}
