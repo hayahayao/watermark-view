@@ -21,6 +21,7 @@
         {
             "matches": [
                 "*://*/zxkp-admin*",
+                "*://*/zxkp-car-admin*",
                 "http://localhost/*"
             ],
             "js": [

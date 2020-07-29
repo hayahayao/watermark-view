@@ -4,6 +4,7 @@ chrome.runtime.onInstalled.addListener(function () {
       {
         conditions: [
           new chrome.declarativeContent.PageStateMatcher({ pageUrl: { pathContains: 'zxkp-admin' } }),
+          new chrome.declarativeContent.PageStateMatcher({ pageUrl: { pathContains: 'zxkp-car-admin' } }),
           new chrome.declarativeContent.PageStateMatcher({ pageUrl: { hostContains: 'localhost' } }),
         ],
         actions: [new chrome.declarativeContent.ShowPageAction()]
